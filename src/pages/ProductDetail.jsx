@@ -31,8 +31,8 @@ const ProductDetail = () => {
                 alt=""
               />
             </div>
-            <div className="grid grid-cols-3 gap-4 row-span-1">
-              {images.slice(0, images.length - 2).map((item, i) => (
+            <div className="grid grid-cols-4 gap-4 row-span-1">
+              {images.map((item, i) => (
                 <div key={i}>
                   <img
                     className="h-[15vh] w-full rounded-lg"

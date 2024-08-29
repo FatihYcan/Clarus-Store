@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({email, pass});
+  };
+
   return (
     <div className="loginDiv">
       <div className="h-[500px] w-11/12 sm:w-[475px] bg-white rounded-[20px] p-5 flex justify-between flex-col text-center">
@@ -16,7 +27,10 @@ const Login = () => {
             Enter your credentials to access your account
           </p>
         </div>
-        <form className="flex flex-col text-left p-3 gap-5">
+        <form
+          className="flex flex-col text-left p-3 gap-5"
+          onSubmit={handleSubmit}
+        >
           <div className="flex flex-col gap-2">
             <label
               className="font-montserrat text-label text-labelColor hover:cursor-pointer hover:after:content-['admin@aa.com'] hover:after:text-black hover:after:pl-3 hover:after:underline"
@@ -29,6 +43,8 @@ const Login = () => {
               type="email"
               placeholder="Enter your email"
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -43,6 +59,8 @@ const Login = () => {
               type="password"
               name="pass"
               placeholder="Enter your password"
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
               required
             />
           </div>

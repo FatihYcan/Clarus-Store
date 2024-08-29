@@ -23,7 +23,7 @@ const Navbar = () => {
   const [show, setshow] = useState(false);
   const { logout } = useContext(AuthContext);
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   return (
     <nav className="bg-navbarColor md:text-sm">

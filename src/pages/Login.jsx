@@ -8,7 +8,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log({ email, pass });
     if (
       email.toLowerCase() === "admin@aa.com" &&
       pass.toLowerCase() === "admin"

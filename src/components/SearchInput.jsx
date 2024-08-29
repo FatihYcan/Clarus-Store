@@ -1,6 +1,9 @@
+import { useProducts } from "../context/ProductProvider";
 import { searchIcon } from "../helper/icons";
 
-const SearchInput = ({ search, setSearch }) => {
+const SearchInput = () => {
+  const { search, setSearch } = useProducts();
+
   return (
     <div className="">
       <div className="relative w-6/12 mx-auto">
@@ -14,6 +17,7 @@ const SearchInput = ({ search, setSearch }) => {
           placeholder="Search products..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          autoComplete="off"
         />
       </div>
     </div>

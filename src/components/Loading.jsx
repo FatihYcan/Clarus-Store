@@ -1,6 +1,8 @@
+import { useProducts } from "../context/ProductProvider";
 import { imageIcon } from "../helper/icons";
 
-const Loading = ({ products }) => {
+const Loading = () => {
+  const { products } = useProducts();
   return (
     <div className="container">
       <div className="card-div">

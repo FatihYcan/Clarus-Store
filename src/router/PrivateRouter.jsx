@@ -1,9 +1,15 @@
-import React from 'react'
+import { Navigate, Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const PrivateRouter = () => {
-  return (
-    <div>PrivateRouter</div>
-  )
-}
+  return true ? (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  ) : (
+    <Navigate to="/" />
+  );
+};
 
-export default PrivateRouter
+export default PrivateRouter;

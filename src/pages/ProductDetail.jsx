@@ -1,11 +1,10 @@
-import axios from "axios";
-import { useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ErrorPage from "../components/ErrorPage";
 
 const ProductDetail = () => {
   const { title: params } = useParams();
   const { state } = useLocation();
+  const navigate = useNavigate();
 
   // console.log(state);
   // console.log(title);
@@ -53,10 +52,16 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="flex justify-end gap-3 mt-4">
-              <button className="border rounded-lg bg-labelColor text-white p-2">
+              <button
+                onClick={() => navigate(-1)}
+                className="border rounded-lg bg-labelColor text-white p-2"
+              >
                 Geri
               </button>
-              <button className="border rounded-lg bg-main text-white p-2">
+              <button
+                onClick={() => navigate("/dashboard")}
+                className="border rounded-lg bg-main text-white p-2"
+              >
                 Ana Sayfaya Dön
               </button>
             </div>

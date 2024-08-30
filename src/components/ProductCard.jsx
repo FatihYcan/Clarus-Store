@@ -6,7 +6,11 @@ const ProductCard = ({ item }) => {
   return (
     <div
       className="cursor-pointer"
-      onClick={() => navigate(`/dashboard/products/${title}?detail=${item.id}`, { state: item })}
+      onClick={() =>
+        navigate(`/dashboard/products/${title}?detail=${item.id}`, {
+          state: item,
+        })
+      }
     >
       <div className="w-full rounded-md bg-gray-200 hover:opacity-75 lg:h-80">
         <img

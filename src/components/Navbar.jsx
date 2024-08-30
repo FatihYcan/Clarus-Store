@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { closeNavbar, openNavbar, logoutIcon } from "../helper/icons";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthProvider";
@@ -29,17 +29,8 @@ const Navbar = () => {
     <nav className="bg-navbarColor md:text-sm">
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
-          <a
-            href="https://clarusway.com/"
-            target="true"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <img src={logo} width={50} height={50} alt="Clarusway" />
-            <span className="text-gray-700 hover:text-gray-900 font-medium">
-              Clarusway
-            </span>
-          </a>
+          <img src={logo} width={75} alt={logo} />
+
           {/**iconu md ekranlardan sonra gizlensin diyoruz */}
           <div className="md:hidden">
             <button

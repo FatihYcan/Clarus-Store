@@ -5,7 +5,7 @@ const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   return (
     <div
-      className="cursor-pointer"
+      className="cursor-pointer card-products"
       onClick={() =>
         navigate(`/dashboard/products/${title}?detail=${item.id}`, {
           state: item,

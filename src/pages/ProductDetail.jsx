@@ -1,21 +1,16 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
+import ErrorPage from "../components/ErrorPage";
 
 const ProductDetail = () => {
   const { title: params } = useParams();
-  const { state, search } = useLocation();
+  const { state } = useLocation();
 
- const getDetailData = async () => {
-    const {data} = await axios(`https://dummyjson.com/products/${search.split("=")[1]}`)
-    console.log(data)
-  }
-  useEffect(()=>{
-    getDetailData()
-  },[])
-
-  console.log(state);
+  // console.log(state);
   // console.log(title);
+
+  if (!state) return <ErrorPage />;
 
   const { title, category, thumbnail, price, images, description } = state;
 

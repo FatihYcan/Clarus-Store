@@ -43,3 +43,6 @@ Bu projede kullanıcılar ürünleri görüntüleyebilir, detaylarını inceleye
 - Tailwind CSS
 - React Router
 - [DummyJSON API](https://dummyjson.com/)
+
+
+[Live](https://fy-clarus-store.netlify.app/)

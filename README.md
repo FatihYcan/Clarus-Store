@@ -19,6 +19,7 @@ In this project, users can view products, review their details and log in. This 
 - javascript
 - Tailwind CSS
 - React Router
+- Session Stroge
 - [DummyJSON API](https://dummyjson.com/)
 
 # Clarus Store
@@ -42,7 +43,12 @@ Bu projede kullanıcılar ürünleri görüntüleyebilir, detaylarını inceleye
 - Javascript
 - Tailwind CSS
 - React Router
+- Session Stroge
 - [DummyJSON API](https://dummyjson.com/)
+
+
+
+https://github.com/user-attachments/assets/0defcb60-fca5-473c-bfac-a6ab1246930b
 
 
 [Live](https://fy-clarus-store.netlify.app/)

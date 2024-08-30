@@ -16,11 +16,11 @@ const ProductDetail = () => {
   return (
     <div className="container">
       <div className="mt-6 w-full ">
-        <article className="mx-auto w-full block lg:flex mt-4 h-full 2xl:h-[70vh]  shadow-lg border rounded-md duration-300 hover:shadow-sm">
+        <article className="mx-auto w-full block lg:flex mt-4 h-full 2xl:h-[70vh] shadow-lg border rounded-md duration-300 hover:shadow-sm">
           <div className="grid grid-rows-4 gap-2 h-full w-full lg:w-7/12 p-4">
-            <div className="w-full row-span-3">
+            <div className="w-full row-span-3 mb-4">
               <img
-                className="h-full w-full rounded-lg"
+                className="h-full w-full rounded-lg object-contain"
                 src={thumbnail}
                 alt=""
               />
@@ -29,7 +29,7 @@ const ProductDetail = () => {
               {images.map((item, i) => (
                 <div key={i}>
                   <img
-                    className="h-[15vh] w-full rounded-lg"
+                    className="h-[15vh] w-full rounded-lg object-contain"
                     src={item}
                     alt=""
                     loading="lazy"

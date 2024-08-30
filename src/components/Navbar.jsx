@@ -54,9 +54,11 @@ const Navbar = () => {
               >
                 <NavLink
                   to={i.path}
-                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white  ${
-                    location.pathname === i.path ? "underline scale-150" : ""
-                  } `}
+                  className={`block py-2 px-4 rounded-full ${
+                    location.pathname === i.path
+                      ? "bg-main text-white"
+                      : "hover:bg-main hover:text-white"
+                  }`}
                 >
                   {i.title}
                 </NavLink>

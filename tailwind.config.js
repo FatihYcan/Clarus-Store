@@ -4,23 +4,28 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "#FEAF00",
-        navbarColor:"#F2EAE1",
-        labelColor: "#6C6C6C",
-        white:"#fff",
+        main: "#6e3dbe",
+        labelColor: "#9e9e9e",
+        white: "#fff",
+      },
+      backgroundImage: {
+        navbarColor: "linear-gradient(135deg, #dce35b 0%, #45a247 100%)",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
       fontSize: {
-        label: ["14px",{
-          lineHeight: 'normal',
-          fontWeight: '500',
-        }],
+        label: [
+          "14px",
+          {
+            lineHeight: "normal",
+            fontWeight: "500",
+          },
+        ],
       },
       boxShadow: {
-        login: '2px 5px 10px 0px rgba(0, 0, 0, 0.1)',
-      }
+        login: "2px 5px 10px 0px rgba(0, 0, 0, 0.1)",
+      },
     },
   },
   plugins: [],

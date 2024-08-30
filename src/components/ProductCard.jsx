@@ -20,7 +20,7 @@ const ProductCard = ({ item }) => {
           className="h-[200px] w-full object-fit lg:h-full lg:w-full"
         />
       </div>
-      <div className="mt-4 flex justify-between">
+      <div className="mt-4 flex justify-between px-4 pb-4">
         <div className="flex-1 mr-2">
           <h3 className="text-sm text-gray-700 line-clamp-1">{title}</h3>
           <p className="mt-1 text-sm text-gray-500 line-clamp-1">{category}</p>

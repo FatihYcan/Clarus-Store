@@ -4,7 +4,7 @@
 
 @layer components {
   .loginDiv {
-    background: linear-gradient(71deg, #feaf00 19.35%, #f8d442 90.12%);
+  background: linear-gradient(135deg, #dce35b 0%, #45a247 100%);
     @apply flex justify-center items-center min-h-screen;
   }
   .login-input {
@@ -24,7 +24,7 @@
   }
 
   .card-products {
-    @apply xl:w-1/5 2xl:w-1/6;
+    @apply xl:w-1/5 2xl:w-1/6 rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105;;
   }
 
   .container {
